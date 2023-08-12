@@ -1,0 +1,45 @@
+/* Custom styles for the header in dark theme */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo a:hover {
+    color: #ccc;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to align the social media icons */
+  }
+  
+  .social-media li {
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .social-media i {
+    transition: color 0.3s ease;
+  }
+  
+  .social-media i:hover {
+    color: #ccc;
+  }
+  
