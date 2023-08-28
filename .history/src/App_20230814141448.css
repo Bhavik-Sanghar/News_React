@@ -1,0 +1,109 @@
+/* App.css */
+
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the navigation bar */
+nav {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the logo */
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Style for navigation links */
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #FF5733;
+}
+
+/* Style for social media icons */
+.social-media ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #FF5733;
+}
+
+/* Style for the main content */
+.container {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+[data-scroll] {
+  scroll-behavior: smooth;
+}
+
+/* Style for the individual news sections */
+.news-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styling for specific news sections */
+#AllNews {
+  background-color: #F5F5F5;
+}
+
+#Trend {
+  background-color: #F7F2E0;
+}
+
+#SportsNews {
+  background-color: #E0F7F7;
+}
+
+#SciNews {
+  background-color: #E0F7E0;
+}
+
+#Entertainment {
+  background-color: #F7E0F7;
+}

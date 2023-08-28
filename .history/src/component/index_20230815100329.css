@@ -1,0 +1,28 @@
+
+  
+.card-hover-effect {
+    transition: transform 0.3s; 
+    transform: rotate(30);
+    /* Add a smooth transition to the transform property */
+  }
+  
+  .card-hover-effect:hover {
+    transform: translateY(-30px); /* Apply a translation on hover */
+  }
+
+  .NewsHead {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Change the color as needed */
+    margin-top: 30px; /* Adjust the margin as needed */
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .NewsHead:hover{
+    transform: translateX(10px);
+    transform: translateY(10px);
+  }
+  

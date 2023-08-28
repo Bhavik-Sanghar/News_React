@@ -7,6 +7,7 @@
   
   .card-hover-effect:hover {
     transform: translateY(-30px); /* Apply a translation on hover */
+    transform: rotate(3deg);
   }
 
   .NewsHead {

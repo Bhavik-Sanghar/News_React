@@ -4,78 +4,40 @@ import SportsNews from "./component/SportsNews";
 import SciNews from "./component/SciNews";
 import EntrNews from "./component/EntrNews";
 import TrandNews from "./component/TrandNews";
+import Navbar from "./Navbar";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
 import { BrowserRouter } from "react-router-dom";
-import './App.css'
+import "./App.css";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+
 
 export default function App() {
   return (
     <div>
-      <nav>
-      <div className="logo">
-          <img src="https://img.icons8.com/?size=512&id=ZokoEU0yT8cv&format=png" alt="Logo" />
-        </div>
-        <ul>
-          <li>
-            <a href="#AllNews">All News</a>
-          </li>
-          <li>
-            <a href="#Trend">Trending News</a>
-          </li>
-          <li>
-            <a href="#SportsNews">Sports News</a>
-          </li>
-          <li>
-            <a href="#SciNews">Science News</a>
-          </li>
-          <li>
-            <a href="#Entertainment">Entertainment News</a>
-          </li>
-        </ul>
-        <div className="social-media">
-        <ul>
-          <li>
-            <a href="https://github.com/Bhavik-Sanghar" target="_blank">
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/bhaviksuiya22" target="_blank">
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/sanghar_bhavik/" target="_blank">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li> 
-            <a
-              href="https://www.linkedin.com/in/bhavik-sanghar-360712271/"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      </nav>
-      
+      <Navbar/>
+      <Parallax pages={5} style={{ top: '0', left: '0' }}>
+      <ParallaxLayer offset={0} speed={2.5}>
       <div id="AllNews" data-scroll>
         <AllNews />
       </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={0} speed={0.5}>
       <div id="Trend" data-scroll>
-        <TrandNews/>
+        <TrandNews />
       </div>
+      </ParallaxLayer>
+    </Parallax>
+    
+     
+      
       <div id="SportsNews" data-scroll>
-        <SportsNews/>
+        <SportsNews />
       </div>
       <div id="SciNews" data-scroll>
-        <SciNews/>
+        <SciNews />
       </div>
       <div id="Entertainment" data-scroll>
-        <EntrNews/>
+        <EntrNews />
       </div>
     </div>
   );
