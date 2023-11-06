@@ -1,28 +1,56 @@
-
-  
 .card-hover-effect {
-    transition: transform 0.3s; 
-    /* Add a smooth transition to the transform property */
-  }
-  
-  .card-hover-effect:hover {
-    transform: translateY(-30px); /* Apply a translation on hover */
-    transform: rotate(3deg);
-  }
+  transition: transform 0.3s;
+  /* Add a smooth transition to the transform property */
+}
 
-  .NewsHead {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000; /* Change the color as needed */
-    margin-top: 30px; /* Adjust the margin as needed */
-    background-color: gainsboro;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.card-hover-effect:hover {
+  transform: translateY(-30px); /* Apply a translation on hover */
+  transform: rotate(3deg);
 
-  .NewsHead:hover{
-    transform: translateX(10px);
-    transform: translateY(10px);
-  }
-  
+}
+
+#Card{
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 30px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#Card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);
+}
+
+
+.NewsHead {
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  color: #000000; /* Change the color as needed */
+  margin-top: 30px; /* Adjust the margin as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.NewsHead:hover {
+  transform: translateX(10px);
+  scale: 1.15;
+}
+.nav-item{
+  padding: 0 5px;
+}
+
+.nav-item:hover{
+  transition: all;
+  transform:  translateX(5px);
+  scale: 1.2;
+  color:red;
+}

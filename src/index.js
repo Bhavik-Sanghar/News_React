@@ -1,14 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import Navbar from "./Navbar";
 import reportWebVitals from "./reportWebVitals";
+import { createRoot } from 'react-dom/client';
+import App from './App.js';
 
-ReactDOM.render(
-  <>
-    <App />
-  </>,
-  document.getElementById("root")
-);
+createRoot(document.getElementById('root')).render(<App />);
+
 
 reportWebVitals();

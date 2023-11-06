@@ -1,7 +1,7 @@
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiarydata-bs-theme=dark sticky-top ">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiarydata-bs-theme=dark sticky-top ">
+      <div className="container-fluid">
         <a href="#">
           <img className="logo "
             src="https://img.icons8.com/?size=512&id=ZokoEU0yT8cv&format=png"
@@ -9,7 +9,7 @@ function Navbar() {
           />
         </a>
         <button 
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -17,23 +17,23 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
               <a href="#AllNews">All News</a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a href="#Trend">Trending News</a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a href="#SportsNews">Sports News</a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a href="#SciNews">Science News</a>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a href="#Entertainment">Entertainment News</a>
             </li>
           </ul>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
+
 import "./index.css";
 
 
@@ -32,9 +32,9 @@ function AllNews() {
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {newsData.map((newsItem) => (
           <div className="col" key={newsItem.hashId}>
-            <Card className="h-100 card-hover-effect ">
+            <Card className="h-100 card-hover-effect" id="Card">
               <Card.Img variant="top" src={newsItem.imageUrl} />
-              <Card.Body>
+              <Card.Body className="card-body">
                 <Card.Title>{newsItem.title}</Card.Title>
                 <Card.Text>{newsItem.content}</Card.Text>
               </Card.Body>
