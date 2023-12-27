@@ -9,6 +9,7 @@
 
 }
 
+
 #Card{
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -23,6 +24,14 @@
   box-shadow: 0 12px 48px 0 rgba(31, 38, 135, 0.5);
 }
 
+.card {
+  height: 100%;
+}
+
+.card-img {
+  object-fit: cover; /* or "contain" depending on your preference */
+  height: 200px; /* set a fixed height for the images */
+}
 
 .NewsHead {
   font-size: 24px;
